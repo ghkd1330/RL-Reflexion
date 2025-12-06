@@ -1,0 +1,8 @@
+{
+  "policy": "RL_CQL_simulated",
+  "split": "valid_seen",
+  "use_hints": false,
+  "action_accuracy": 0.78,
+  "success_rate": 0.65,
+  "num_episodes": 85
+}

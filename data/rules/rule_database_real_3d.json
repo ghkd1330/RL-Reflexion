@@ -1,0 +1,295 @@
+{
+  "metadata": {
+    "source": "ai2thor_3d_rl_failures",
+    "model": "Qwen2-VL-7B-Instruct-4bit",
+    "generated_at": "2025-11-25T20:38:19.151280",
+    "num_episodes_analyzed": 21
+  },
+  "episodes": {
+    "valid_seen_0000": {
+      "task_type": "unknown",
+      "instruction": "look at the clock under the lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d78, LookDown\u00d791",
+      "failure_reason": "The robot failed to complete the task because it did not find the clock under the lamp. The clock is located on the dresser, which is not visible in the provided frames.",
+      "rules": [
+        "Always check the dresser for items before moving on to other locations.",
+        "Use the \"LookUp\" action to search for items on higher surfaces.",
+        "Pay attention to the environment layout and furniture arrangement to identify potential locations for the target object."
+      ]
+    },
+    "valid_seen_0001": {
+      "task_type": "unknown",
+      "instruction": "look at the clock under the lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d78, LookDown\u00d791",
+      "failure_reason": "The robot failed to complete the task because it did not find the clock under the lamp. The clock is located on the dresser, which is not visible in the provided frames.",
+      "rules": [
+        "Always check the dresser for items before moving on to other locations.",
+        "Use the \"LookUp\" action to search for items on higher surfaces.",
+        "Pay attention to the environment layout and furniture arrangement to identify potential locations for the target object."
+      ]
+    },
+    "valid_seen_0002": {
+      "task_type": "unknown",
+      "instruction": "look at the clock under the lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d78, LookDown\u00d791",
+      "failure_reason": "The robot failed to complete the task because it did not find the clock under the lamp. The clock was not visible in the provided frames, and the robot did not attempt to look for it in the correct location.",
+      "rules": [
+        "Always check the location specified in the task description before moving.",
+        "If the object is not visible, use the LookDown action to search for it.",
+        "If the object is still not found, use the MoveAhead action to reposition the robot and try again.",
+        "If the object is still not visible, use the LookUp action to search for it from a different angle.",
+        "If the object is still not found, use the LookRight and LookLeft actions to search for it from different directions."
+      ]
+    },
+    "valid_seen_0006": {
+      "task_type": "unknown",
+      "instruction": "take the bowl to the lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, MoveAhead\u00d74, RotateRight, MoveAhead\u00d790",
+      "failure_reason": "The robot failed to find the bowl and the lamp in the given frames, indicating that it did not navigate to the correct locations.",
+      "rules": [
+        "Always check the current location and surroundings for the target objects before attempting to move.",
+        "Use the LookDown action to inspect the floor and nearby areas for the target objects.",
+        "If the target objects are not visible, consider using the RotateRight action to change the robot's orientation and search for the objects from a different angle."
+      ]
+    },
+    "valid_seen_0007": {
+      "task_type": "unknown",
+      "instruction": "take the bowl to the lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, MoveAhead\u00d74, RotateRight, MoveAhead\u00d790",
+      "failure_reason": "The robot failed to find the bowl and the lamp in the given frames, indicating that it might not have been able to locate these objects in the environment.",
+      "rules": [
+        "Always use the LookDown action to check for objects on the floor before moving forward.",
+        "Implement a more thorough search strategy by checking all possible locations where the bowl and lamp could be, such as on the bed, nightstand, or other furniture.",
+        "Utilize the RotateRight action to change the robot's orientation and search for the objects from different angles.",
+        "Increase the number of steps taken to ensure a more comprehensive search of the room.",
+        "Implement a pathfinding algorithm to guide the robot more efficiently towards the target objects."
+      ]
+    },
+    "valid_seen_0008": {
+      "task_type": "unknown",
+      "instruction": "take the bowl to the lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, MoveAhead\u00d74, RotateRight, MoveAhead\u00d790",
+      "failure_reason": "The robot failed to find the bowl and the lamp in the given frames, indicating that it might not have been able to locate these objects in the environment.",
+      "rules": [
+        "Always use the LookDown action to check for objects on the floor or near the ground.",
+        "Ensure that the robot is facing the correct direction before attempting to move towards the target object.",
+        "Use the RotateRight action to change the robot's orientation if necessary to face the target object.",
+        "Implement a more thorough search strategy by checking multiple locations, including the floor, shelves, and furniture, to find the target objects.",
+        "Utilize the LookDown action again after moving to a new location to confirm the presence of the target object before proceeding."
+      ]
+    },
+    "valid_seen_0009": {
+      "task_type": "unknown",
+      "instruction": "Examine a bowl by the light of a desk lamp.",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "MoveAhead\u00d7100",
+      "failure_reason": "The robot failed to complete the task because it did not move towards the bowl, which is located on the nightstand next to the bed.",
+      "rules": [
+        "Always move towards the bowl before attempting to examine it.",
+        "Ensure the desk lamp is on before examining the bowl.",
+        "Use the desk lamp to illuminate the bowl and its surroundings for better visibility."
+      ]
+    },
+    "valid_seen_0010": {
+      "task_type": "unknown",
+      "instruction": "Examine a bowl by the light of a desk lamp.",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "MoveAhead\u00d7100",
+      "failure_reason": "The robot failed to complete the task because it did not move towards the bowl, which is located on the bed. The robot only moved forward and did not interact with the bowl.",
+      "rules": [
+        "Always move towards the bowl before attempting to examine it.",
+        "Use the desk lamp to illuminate the bowl before examining it.",
+        "Ensure that the robot is in the correct position to interact with the bowl and the desk lamp."
+      ]
+    },
+    "valid_seen_0011": {
+      "task_type": "unknown",
+      "instruction": "Examine a bowl by the light of a desk lamp.",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "MoveAhead\u00d7100",
+      "failure_reason": "The robot failed to complete the task because it did not move towards the bowl, which is located on the bed. The robot only moved forward by 100 units, which is not enough to reach the bowl.",
+      "rules": [
+        "Always move closer to the bowl before attempting to examine it.",
+        "Use the desk lamp to illuminate the bowl before examining it.",
+        "Ensure that the robot's path is clear of obstacles to reach the bowl."
+      ]
+    },
+    "valid_seen_0012": {
+      "task_type": "unknown",
+      "instruction": "Turn on a light with a box in hand.",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "MoveAhead\u00d76, LookUp, Toggle\u00d793",
+      "failure_reason": "The robot failed to complete the task because it did not interact with the light or the box in the given frames.",
+      "rules": [
+        "Always check the current state of the light and the box before attempting to interact with them.",
+        "Ensure that the robot is facing the correct direction to interact with the light or the box.",
+        "If the robot is unable to interact with the light or the box, it should try to reposition itself or adjust its actions to achieve the desired outcome."
+      ]
+    },
+    "valid_seen_0013": {
+      "task_type": "unknown",
+      "instruction": "Turn on a light with a box in hand.",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "MoveAhead\u00d76, LookUp, Toggle\u00d793",
+      "failure_reason": "The robot failed to complete the task because it did not interact with the light or the box in the given frames.",
+      "rules": [
+        "Always check the current state of the light and the box before attempting to interact with them.",
+        "Ensure that the robot is facing the correct direction to interact with the light or the box.",
+        "If the robot is unable to interact with the light or the box, it should try to reposition itself or adjust its actions accordingly."
+      ]
+    },
+    "valid_seen_0014": {
+      "task_type": "unknown",
+      "instruction": "Turn on a light with a box in hand.",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "MoveAhead\u00d76, LookUp, Toggle\u00d793",
+      "failure_reason": "The robot failed to complete the task because it did not interact with the light or the box in the given frames.",
+      "rules": [
+        "Always check the current state of the light and the box before attempting to interact with them.",
+        "Ensure that the robot is facing the correct direction to interact with the light or the box.",
+        "If the robot is unable to interact with the light or the box, it should try to reposition itself or adjust its actions accordingly."
+      ]
+    },
+    "valid_seen_0018": {
+      "task_type": "unknown",
+      "instruction": "Examine a CD by a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, Pickup\u00d795",
+      "failure_reason": "The robot failed to complete the task because it did not find a CD by a lamp. It only examined a CD on the table, which did not meet the task's requirement.",
+      "rules": [
+        "Always check the surroundings for the specific object required by the task.",
+        "Use the \"Examine\" action to identify objects that might be relevant to the task.",
+        "Pay attention to the task's requirements and adjust the robot's actions accordingly."
+      ]
+    },
+    "valid_seen_0019": {
+      "task_type": "unknown",
+      "instruction": "Examine a CD by a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, Pickup\u00d795",
+      "failure_reason": "The robot failed to complete the task because it did not find a CD by a lamp. It only examined a CD on the table, which did not meet the task's requirement.",
+      "rules": [
+        "Always check the location specified in the task description before examining objects.",
+        "Ensure the robot is looking for the correct object and not just any object.",
+        "Verify the task's requirements and make sure the robot is performing the correct actions to meet them."
+      ]
+    },
+    "valid_seen_0020": {
+      "task_type": "unknown",
+      "instruction": "Examine a CD by a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, Pickup\u00d795",
+      "failure_reason": "The robot failed to complete the task because it did not find a CD by a lamp. It only examined a CD on the table, which was not the target.",
+      "rules": [
+        "Always check the surroundings for the target object before examining it.",
+        "Use the \"LookUp\" action to find the target object more efficiently.",
+        "If the target object is not immediately visible, use the \"Move\" action to reposition the robot closer to the target.",
+        "If the target object is not found, use the \"Examine\" action to search for it in different locations.",
+        "If the target object is not found after multiple attempts, use the \"Stop\" action to stop the task and report the failure."
+      ]
+    },
+    "valid_seen_0021": {
+      "task_type": "unknown",
+      "instruction": "Examine a CD by a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, Pickup\u00d795",
+      "failure_reason": "The robot failed to complete the task because it did not find a CD by a lamp. It only examined a CD on the table, which did not match the task instruction.",
+      "rules": [
+        "Always check the location specified in the task instruction before examining objects.",
+        "Ensure the robot is looking for the correct object by comparing the task instruction with the objects it can see.",
+        "If the robot is unsure about the task, it should ask for clarification or re-examine the task instruction."
+      ]
+    },
+    "valid_seen_0022": {
+      "task_type": "unknown",
+      "instruction": "Examine a CD by a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, Pickup\u00d795",
+      "failure_reason": "The robot failed to complete the task because it did not find a CD by a lamp. It only examined a CD on the table, which was not the target.",
+      "rules": [
+        "Always check the surroundings for the target object before examining it.",
+        "Use the \"Examine\" action to identify the target object more accurately.",
+        "Pay attention to the environment and objects around the target to ensure it is the correct one."
+      ]
+    },
+    "valid_seen_0023": {
+      "task_type": "unknown",
+      "instruction": "Examine a CD by a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "LookDown, MoveAhead\u00d73, LookDown, Pickup\u00d795",
+      "failure_reason": "The robot failed to complete the task because it did not find a CD by a lamp. It only examined a CD on the table, which was not the target.",
+      "rules": [
+        "Always check the surroundings for the target object before examining it.",
+        "Use the \"LookUp\" action to find the target object more efficiently.",
+        "If the target object is not immediately visible, use the \"Move\" action to reposition the robot closer to the target.",
+        "If the target object is not found, use the \"Examine\" action to search for it in different locations.",
+        "If the target object is not found after multiple attempts, use the \"Stop\" action to stop the task and report the failure."
+      ]
+    },
+    "valid_seen_0024": {
+      "task_type": "unknown",
+      "instruction": "Carry a CD while turning on a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "RotateLeft, LookDown, MoveAhead\u00d798",
+      "failure_reason": "The robot failed to complete the task because it did not carry the CD while turning on the lamp. It also did not move towards the lamp to turn it on.",
+      "rules": [
+        "Always carry the CD before attempting to turn on the lamp.",
+        "Move towards the lamp to turn it on after carrying the CD.",
+        "Ensure the robot is in the correct position to carry the CD and turn on the lamp simultaneously."
+      ]
+    },
+    "valid_seen_0025": {
+      "task_type": "unknown",
+      "instruction": "Carry a CD while turning on a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "RotateLeft, LookDown, MoveAhead\u00d798",
+      "failure_reason": "The robot failed to complete the task because it did not carry a CD while turning on the lamp. It also did not move towards the CD before attempting to carry it.",
+      "rules": [
+        "Always carry the CD before turning on the lamp.",
+        "Ensure the robot is facing the CD before attempting to carry it.",
+        "Move towards the CD before attempting to carry it.",
+        "Turn on the lamp after carrying the CD.",
+        "Verify the robot is in the correct position to turn on the lamp before proceeding."
+      ]
+    },
+    "valid_seen_0026": {
+      "task_type": "unknown",
+      "instruction": "Carry a CD while turning on a lamp",
+      "split": "valid_seen",
+      "total_steps": 100,
+      "actions_compact": "RotateLeft, LookDown, MoveAhead\u00d798",
+      "failure_reason": "The robot failed to complete the task because it did not carry the CD while turning on the lamp. It also did not move towards the lamp to turn it on.",
+      "rules": [
+        "Always carry the CD before attempting to turn on the lamp.",
+        "Move towards the lamp to turn it on after carrying the CD.",
+        "Ensure the robot is in the correct position to carry the CD and turn on the lamp simultaneously."
+      ]
+    }
+  }
+}

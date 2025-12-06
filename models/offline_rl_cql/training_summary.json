@@ -1,0 +1,19 @@
+{
+  "algorithm": "Conservative Q-Learning (CQL) - Discrete",
+  "training_steps": 100000,
+  "batch_size": 256,
+  "actor_lr": 0.0001,
+  "critic_lr": 0.0003,
+  "conservative_weight": 1.0,
+  "dataset": {
+    "num_transitions": 29164,
+    "num_episodes": 781,
+    "observation_dim": 25088,
+    "action_dim": 7,
+    "avg_reward": 8.584327682490233
+  },
+  "output": {
+    "checkpoint": "models/offline_rl_cql/cql_policy.d3",
+    "logs": "exp/offline_rl_cql/"
+  }
+}

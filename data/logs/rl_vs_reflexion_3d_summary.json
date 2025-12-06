@@ -1,0 +1,77 @@
+{
+  "rl_baseline": {
+    "success_rate": 0.3,
+    "success_count": 9,
+    "num_episodes": 30
+  },
+  "rl_reflexion": {
+    "success_rate": 0.4666666666666667,
+    "success_count": 14,
+    "num_episodes": 30
+  },
+  "improvement": {
+    "absolute": 0.16666666666666669,
+    "relative_pct": 55.55555555555557
+  },
+  "helped_episodes": [
+    {
+      "episode_idx": 18,
+      "episode_id": "valid_seen_0018",
+      "rl_steps": 100,
+      "reflexion_steps": 2,
+      "reflexion_reward": 1.0
+    },
+    {
+      "episode_idx": 19,
+      "episode_id": "valid_seen_0019",
+      "rl_steps": 100,
+      "reflexion_steps": 2,
+      "reflexion_reward": 1.0
+    },
+    {
+      "episode_idx": 20,
+      "episode_id": "valid_seen_0020",
+      "rl_steps": 100,
+      "reflexion_steps": 2,
+      "reflexion_reward": 1.0
+    },
+    {
+      "episode_idx": 21,
+      "episode_id": "valid_seen_0021",
+      "rl_steps": 100,
+      "reflexion_steps": 2,
+      "reflexion_reward": 1.0
+    },
+    {
+      "episode_idx": 22,
+      "episode_id": "valid_seen_0022",
+      "rl_steps": 100,
+      "reflexion_steps": 2,
+      "reflexion_reward": 1.0
+    },
+    {
+      "episode_idx": 23,
+      "episode_id": "valid_seen_0023",
+      "rl_steps": 100,
+      "reflexion_steps": 2,
+      "reflexion_reward": 1.0
+    },
+    {
+      "episode_idx": 25,
+      "episode_id": "valid_seen_0025",
+      "rl_steps": 100,
+      "reflexion_steps": 93,
+      "reflexion_reward": 1.0
+    }
+  ],
+  "hurt_episodes": [
+    {
+      "episode_idx": 4,
+      "episode_id": "valid_seen_0004"
+    },
+    {
+      "episode_idx": 5,
+      "episode_id": "valid_seen_0005"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================
+# Virtual Environments
+# ============================================
+venv/
+venv_thor/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================
+# IDE and OS
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Jupyter
+# ============================================
+.ipynb_checkpoints/
+
+# ============================================
+# Large Data (regenerable)
+# ============================================
+data/offline_rl/
+data/json_feat_subset/
+data/json_feat_2.1.0/
+data/il3d_bc/
+data/logs/episodes_3d/
+data/logs/episodes/
+data/test_frames/
+data/thor_visual_test/
+data/alfred_dataset_stats.json
+
+# Keep these explicitly:
+# - data/rules/
+# - data/splits/
+# - data/sample_frames/
+
+# ============================================
+# Large Models (unused)
+# ============================================
+models/seq2seq_il_best/
+
+# Keep these explicitly:
+# - models/offline_rl_cql/
+# - models/il3d_bc/
+
+# ============================================
+# Training Logs
+# ============================================
+d3rlpy_logs/
+exp/
+runs/
+wandb/
+lightning_logs/
+tensorboard/
+*.log
+
+# ============================================
+# Legacy / Abandoned
+# ============================================
+embert/
+storage/
+archive/
+notebooks/
+videos/
+
+# ============================================
+# Docker (not supported)
+# ============================================
+Dockerfile
+docker-compose.yml
+docker/
+.docker/
+
+# ============================================
+# Backup and Temporary Files
+# ============================================
+backup_*/
+tmp/
+temp/
+=*
+*.tmp
+cleanup_for_github.sh
+
+# ============================================
+# Secrets and Local Config
+# ============================================
+.env
+.env.local
+*.pem
+secrets/
+
+# ============================================
+# AI2-THOR Cache
+# ============================================
+.ai2thor/
+
+# Exclude docs markdown files
+docs/*.md
+docs/tables/*.md

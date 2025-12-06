@@ -1,0 +1,81 @@
+{
+  "agent_type": "il",
+  "split": "valid_seen",
+  "num_episodes": 10,
+  "success_rate": 0.0,
+  "success_count": 0,
+  "avg_steps": 100.0,
+  "avg_reward": 0.0,
+  "episodes": [
+    {
+      "episode_idx": 0,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 1,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 2,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 3,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 4,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 5,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 6,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 7,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 8,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 9,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    }
+  ]
+}

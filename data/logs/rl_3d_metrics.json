@@ -1,0 +1,32 @@
+{
+  "agent_type": "rl",
+  "split": "valid_seen",
+  "num_episodes": 3,
+  "success_rate": 0.0,
+  "success_count": 0,
+  "avg_steps": 100.0,
+  "avg_reward": 0.0,
+  "episodes": [
+    {
+      "episode_idx": 0,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 1,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    },
+    {
+      "episode_idx": 2,
+      "split": "valid_seen",
+      "success": false,
+      "steps": 100,
+      "total_reward": 0.0
+    }
+  ]
+}

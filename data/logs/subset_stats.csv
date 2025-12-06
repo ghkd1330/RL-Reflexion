@@ -1,0 +1,7 @@
+task_type,split,num_episodes
+look_at_obj_in_light,train,711
+look_at_obj_in_light,valid_seen,29
+look_at_obj_in_light,valid_unseen,50
+pick_and_place_simple,train,1034
+pick_and_place_simple,valid_seen,46
+pick_and_place_simple,valid_unseen,30

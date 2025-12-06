@@ -1,0 +1,8 @@
+{
+  "policy": "IL_Expert",
+  "action_accuracy": 1.0,
+  "num_steps": 1557,
+  "num_episodes": 45,
+  "avg_episode_reward": 8.654000282287598,
+  "std_episode_reward": 0.11086320132017136
+}

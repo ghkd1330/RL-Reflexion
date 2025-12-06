@@ -1,0 +1,46 @@
+{
+  "dataset_name": "ALFRED json_feat Subset",
+  "description": "Filtered ALFRED dataset containing only pick_and_place_simple and look_at_obj_in_light task types",
+  "creation_date": "2025-11-21",
+  "total_episodes": 1900,
+  "total_size_gb": 6.22,
+  "source_dataset": "json_feat_2.1.0",
+  "task_types": [
+    "pick_and_place_simple",
+    "look_at_obj_in_light"
+  ],
+  "splits": {
+    "train": {
+      "num_episodes": 1745,
+      "size_gb": 5.71,
+      "task_breakdown": {
+        "pick_and_place_simple": 1034,
+        "look_at_obj_in_light": 711
+      }
+    },
+    "valid_seen": {
+      "num_episodes": 75,
+      "size_mb": 251.59,
+      "task_breakdown": {
+        "pick_and_place_simple": 46,
+        "look_at_obj_in_light": 29
+      }
+    },
+    "valid_unseen": {
+      "num_episodes": 80,
+      "size_mb": 272.77,
+      "task_breakdown": {
+        "pick_and_place_simple": 30,
+        "look_at_obj_in_light": 50
+      },
+      "notes": "Limited to 50 episodes per task type from original unseen set"
+    }
+  },
+  "data_location": "data/json_feat_subset",
+  "usage_notes": [
+    "This subset is intended for EmBERT imitation learning and subsequent PPO finetuning",
+    "Each episode contains traj_data.json and feat_conv.pt (ResNet18 features)",
+    "MaskRCNN features can be extracted separately if needed for improved performance",
+    "For EmBERT training, use: --data data/json_feat_subset"
+  ]
+}

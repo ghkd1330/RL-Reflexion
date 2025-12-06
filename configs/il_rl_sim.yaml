@@ -1,0 +1,27 @@
+# IL + RL (CQL) Configuration
+
+experiment:
+  name: "il_rl_cql"
+  description: "Offline RL (CQL) trained on IL demonstrations"
+  
+policy:
+  type: "rl_cql"
+  checkpoint: "models/offline_rl_cql/cql_policy.d3"
+  use_rl: true
+  use_reflexion: false
+  
+evaluation:
+  script: "rl/eval_simplified_sim.py"
+  splits:
+    - "valid_seen"
+    - "valid_unseen"
+  num_episodes_per_split: 85
+  max_steps_per_episode: 100
+  
+metrics:
+  output_file: "data/logs/il_rl_sim_metrics.csv"
+  track:
+    - "action_accuracy"
+    - "success_rate"
+    - "average_episode_length"
+    - "num_episodes"
