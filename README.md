@@ -266,9 +266,7 @@ RL-project/
 │   ├── offline_rl_cql/      # CQL checkpoint (99 MB)
 │   └── il3d_bc/             # BC checkpoint (50 MB)
 ├── docs/
-│   ├── figures/             # Publication figures
-│   ├── tables/              # LaTeX/Markdown tables
-│   └── *.md                 # Documentation
+│   └── figures/             # Publication figures
 └── scripts/
     ├── generate_all_paper_figures.py  # Figure generation
     └── test_qwen2vl_real.py          # VLM sanity test
@@ -300,18 +298,6 @@ RL-project/
 4. **Memory integration**: Track what objects have been seen, actions tried
 5. **Continuous control**: Extend to robotic manipulation beyond discrete actions
 6. **Multi-task transfer**: Apply rules across task types
-
----
-
-## Documentation
-
-- **System Architecture**: `docs/system_architecture_narrative.md`
-- **Results & Discussion**: `docs/results_and_discussion.md`
-- **Training Guides**:
-  - IL3D-BC: `docs/IL3D_BC_TRAINING.md`
-  - Offline RL: `docs/RL_OFFLINE_TRAINING.md`
-  - Reflexion: `docs/REFLEXION_MODULE.md`
-- **Paper Summary**: `docs/PAPER_SUMMARY.md`
 
 ---
 
@@ -373,6 +359,6 @@ See individual component licenses for details.
 
 ## Contact
 
-For questions or issues, please open a GitHub issue or contact [your email].
+For questions or issues, please open a GitHub issue or contact ghkd1330@gmail.com.
 
 **Project Status**: ✅ Complete implementation with reproducible results (Nov 2025)
