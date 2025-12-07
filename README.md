@@ -326,7 +326,7 @@ If you use this code or methodology, please cite:
 @misc{rl_reflexion_3d_2025,
   title={Improving Embodied AI with VLM-Based Reflexion: 
          From Offline RL to Meta-Control in 3D Environments},
-  author={[Your Name]},
+  author={Chanuk Hwang},
   year={2025},
   note={RL+Reflexion system achieving 55.6\% relative improvement 
         on ALFRED 3D tasks via Qwen2-VL-7B failure analysis}
