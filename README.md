@@ -66,7 +66,7 @@ The final system consists of four components:
 
 ```bash
 # Clone repository
-git clone <repo-url>
+git clone https://github.com/ghkd1330/RL-Reflexion.git
 cd RL-project
 
 # Create virtual environment
