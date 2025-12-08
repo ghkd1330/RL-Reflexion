@@ -1,4 +1,4 @@
-# RL+Reflexion for Embodied AI in 3D Environments
+# Multimodal Reflexion for Offline Reinforcement Learning in ALFRED
 
 **Improving vision-based reinforcement learning agents with VLM-based failure analysis and meta-control.**
 
