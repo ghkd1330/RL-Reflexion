@@ -67,7 +67,7 @@ The final system consists of four components:
 ```bash
 # Clone repository
 git clone https://github.com/ghkd1330/RL-Reflexion.git
-cd RL-project
+cd RL-Reflexion
 
 # Create virtual environment
 python3 -m venv venv_thor
@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 # Verify AI2-THOR setup
 export DISPLAY=:1.0
-python3 -c "from ai2thor.controller import Controller; c = Controller(); print('✓ AI2-THOR ready')"
+python3 -c "from ai2thor.controller import Controller; c = Controller(); print('AI2-THOR ready')"
 ```
 
 ### Demo: 5-Episode Comparison
